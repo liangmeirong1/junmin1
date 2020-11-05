@@ -1,0 +1,16 @@
+{
+  "id": "2089878",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3280184",
+      "name": "供应管理",
+      "font_class": "gongying",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    }
+  ]
+}

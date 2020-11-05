@@ -1,0 +1,16 @@
+{
+  "id": "2089878",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1495138",
+      "name": "热点-实",
+      "font_class": "redian-shi",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    }
+  ]
+}

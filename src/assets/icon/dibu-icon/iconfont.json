@@ -1,0 +1,23 @@
+{
+  "id": "2089878",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1031017",
+      "name": "详情",
+      "font_class": "xiangqing",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "10044026",
+      "name": "联系",
+      "font_class": "xinbaniconshangchuan-",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    }
+  ]
+}
