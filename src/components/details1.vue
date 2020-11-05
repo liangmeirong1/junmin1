@@ -61,12 +61,13 @@ export default {
   display: flex;
   flex-wrap: wrap;
   margin-top: 20px;
+    border: 0.5px solid black;
   
 }
 .table div {
   width: 25%;
   height: 40px;
-  border: 1px solid black;
+  border: 0.5px solid black;
   box-sizing: border-box;
  
 }
