@@ -22,7 +22,7 @@ export default {
   data () {
     return {
       msg: '123',
-      topImg:require('../assets/logo.jpg')
+      topImg:require('../assets/img/logo.png')
     }
   }
 }
@@ -38,22 +38,20 @@ export default {
   width: 100%;
 }
 .top{
-  margin: 0 auto;
+  text-align: left;
   height: 150px;
-  width: 1500px;
+  width: 100%;
 }
 .top img{
-  width: 100%;
-  height: 100%;
+  margin-top: 20px;
+  margin-left: 5%;
+  width: 50%;
+  height: 70%;
 }
 .main{
   width: 100%;
-
-  border: 1px solid #f6f6f6;
-  background-color: #f6f6f6;
 }
 .regi-form{
-  margin-top: 20px;
   margin-left: 80px;
   width: 700px;
   height: 700px;

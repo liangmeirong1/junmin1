@@ -2,15 +2,16 @@
   <div id="top">
     <div class="first">
 			<div class="title">{{title}}</div>
+			<div class="control-center"><span class="iconfont icon-zu1776 control-icon"></span><router-link to="/control">管理中心</router-link></div>
 			<div class="time">{{nowDate}}</div>
 			<div class="login"><span class="iconfont icon-denglu-yonghu"><router-link to="/login">登录</router-link>|<router-link to="/register">注册</router-link></span></div>
 		</div>
 		<div class="second">
-		    <img :src="logo">
+		    <div class="logo-box"><img :src="logo"></div>
 			<div class="searchBar">
-				<input  id="result_output"  type="search" placeholder="请输入关键信息">
-				<div class="send_needs"><span class="iconfont5 icon-fasong"></span>发需求</div>
-				<div class="send_product"><span class="iconfont5 icon-tianxie"></span>发产品</div>
+				<input  id="result_output"  type="search" placeholder="找需求"><span class="iconfont14 icon-sousuo search-icon"></span>
+				<div class="send_needs"><span class="iconfont5 icon-fasong"></span><router-link to="/sendneed" tag="span">发需求</router-link></div>
+				<div class="send_product"><span class="iconfont5 icon-tianxie"></span><router-link to="#" tag="span">发产品</router-link></div>
 			</div>
 		</div>
 		<div class="third">
@@ -28,8 +29,8 @@ export default {
   data(){
 	  return{
 		  msg:'logo',
-		  logo:require('../assets/logo.jpg'),
-		  title:'欢迎来到xxx军民融合平台',
+		  logo:require('../assets/img/logo.png'),
+		  title:'欢迎来到佛山军民融合平台',
 		  nowDate:null,
 		  timer:"",
 		  currentTime:new Date()
@@ -67,31 +68,40 @@ export default {
 	position: relative;
 	width: 100%;
 	height: 50px;
-	background-color: #323b50;
+/* 	background-color: #323b50; */
 	margin: 0 auto;
 }
 .title{
-	color: white;
+	font-weight: bold;
 	line-height: 45px;
 	position: absolute;
 	left: 0;
 	margin-left: 20px;
 }
+.control-center{
+	font-weight: bold;
+	line-height: 45px;
+	position: absolute;
+	right: 320px;
+}
+.control-center a{
+	color: black;
+}
+.control-icon{
+	font-size: 14px;
+	margin-right: 2px;
+}
 .time{
-	color: white;
 	line-height: 45px;
 	position: absolute;
 	right: 150px;
+	font-weight: bold;
 }
 .login{
-	text-decoration-color: white;
-	color: white;
+	font-weight: bold;
 	line-height: 45px;
 	position: absolute;
 	right: 20px;
-}
-.login a{
-	color: white;
 }
 .second{
 	height: 150px;
@@ -104,13 +114,26 @@ export default {
 	height: 100%;
 	z-index: -1;
 }
+.logo-box{
+	height: 70%;
+	width: 60%;
+}
+.logo-box img{
+	margin-top: 5%;
+	width: 100%;
+	height: 100%;
+}
 .searchBar{
-		position: absolute;
-		top: 33.3%;
-		right: 0;
-		height: 60%;
-		width: 40%;
-	}
+	position: absolute;
+	top: 33.3%;
+	right: 10px;
+	height: 60%;
+	width: 30%;
+}
+.search-icon{
+	position: absolute;
+	font-size: 30px;
+}
 .searchBar div{
 	display: inline;
 	line-height: 50px;

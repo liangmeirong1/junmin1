@@ -14,23 +14,13 @@
 					<!-- 默认第一屏幕 -->
 						<div class="screen">
 							<ul>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>林泉电机助力我国首款高原无人机高原试飞成功</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>林泉电机助力我国首款高原无人机高原试飞成功</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>林泉电机助力我国首款高原无人机高原试飞成功</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>林泉电机助力我国首款高原无人机高原试飞成功</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>林泉电机助力我国首款高原无人机高原试飞成功</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>林泉电机助力我国首款高原无人机高原试飞成功</router-link><span class="time">2020-7-11</span></li>
+								<li v-for="(item,index) in screen1" :key="index"><router-link to="/newinfo/notice/newsDetail" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>{{item}}</router-link><span class="time">2020-7-11</span></li>
 				            </ul>
 						</div>
 						<!-- 第二屏幕 -->
 						<div class="screen">
 							<ul>
-							    <li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>贵州省国防科技工业系统安全生产 标准化达标企业公告（ 黔科工安标〔2020〕6号）</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>贵州省国防科技工业系统安全生产 标准化达标企业公告（ 黔科工安标〔2020〕6号）</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>贵州省国防科技工业系统安全生产 标准化达标企业公告（ 黔科工安标〔2020〕6号）</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>贵州省国防科技工业系统安全生产 标准化达标企业公告（ 黔科工安标〔2020〕6号）</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>贵州省国防科技工业系统安全生产 标准化达标企业公告（ 黔科工安标〔2020〕6号）</router-link><span class="time">2020-7-11</span></li>
-								<li><router-link to="/newinfo" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>贵州省国防科技工业系统安全生产 标准化达标企业公告（ 黔科工安标〔2020〕6号）</router-link><span class="time">2020-7-11</span></li>
+							    <li v-for="(item,index) in screen2" :key="index"><router-link to="/newinfo/notice/newsDetail" class="tab-info"><span class="iconfont1 icon-redian-shi"></span>{{item}}</router-link><span class="time">2020-7-11</span></li>
 				            </ul>
 						</div>
 					</div>
@@ -45,7 +35,9 @@ export default {
   name: "tabs",
   data () {
     return {
-      activeName: 'second'
+	  activeName: 'second',
+	  screen1: ['林泉电机助力我国首款高原无人机高原试飞成功','中央军委印发《关于加快推进三位一体新型军事人才培养体系建设的决定》','“黔货出山进军营”薏仁米产品展示展销现场会在兴仁举行','弘扬新时代“工匠精神”　让贵州工业“独具匠心”','黔浙携手！“黔货出山进军营”助力雷山茶香富农','省委军民融合办举办机关党委、机关纪委、支部书记及委员履职能力提升培训班'],
+	  screen2: ['林泉电机助力我国首款高原无人机高原试飞成功','中央军委印发《关于加快推进三位一体新型军事人才培养体系建设的决定》','“黔货出山进军营”薏仁米产品展示展销现场会在兴仁举行','弘扬新时代“工匠精神”　让贵州工业“独具匠心”','黔浙携手！“黔货出山进军营”助力雷山茶香富农','省委军民融合办举办机关党委、机关纪委、支部书记及委员履职能力提升培训班']
     }
   },
   methods:{
@@ -65,7 +57,9 @@ export default {
 #tabs{
 	overflow: hidden;
 	width: 100%;
-	height: 100%;
+	height: 300px;
+	background-color: rgb(232, 248, 246);
+	border-bottom-right-radius: 10px;
 }
 input[name="screen"]
 {
@@ -102,7 +96,7 @@ input[name="screen"]
 .tab{
 	width: 100%;
 	height: 40px;
-	border-bottom: 1px solid #efefef
+	border-bottom: 1px solid #ac9292
 }
 .tab ul li{
 	float: left;
@@ -131,12 +125,15 @@ input[name="screen"]
 	text-align: left;
 	width: 100%;
 	height: 40px;
-	border-bottom: 1px solid #efefef;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	font-weight: 700;
 }
 .screen ul li a{
 	color: black;
+}
+.screen ul li a:hover{
+	color: skyblue;
 }
 .tab-info{
 	text-decoration: none;

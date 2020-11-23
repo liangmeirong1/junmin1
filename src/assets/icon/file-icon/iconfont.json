@@ -1,0 +1,16 @@
+{
+  "id": "2089878",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11757074",
+      "name": "文件",
+      "font_class": "wenjian",
+      "unicode": "e739",
+      "unicode_decimal": 59193
+    }
+  ]
+}

@@ -13,11 +13,11 @@ export default {
   name: "Banner",
   data () {
      return {
-      img:[require("../assets/1.jpg"),
-           require("../assets/2.jpg"),
-           require("../assets/3.jpg"),
-           require("../assets/4.jpg"),
-           require("../assets/5.jpg")]
+      img:[require("../assets/img/1.jpg"),
+           require("../assets/img/2.jpg"),
+           require("../assets/img/3.jpg"),
+           require("../assets/img/4.jpg"),
+           require("../assets/img/5.jpg")]
     }
   }
 }
@@ -29,7 +29,9 @@ export default {
   width: 100%;
   height: 100%;
 }
-
+.el-carousel__container{
+  height: 100%;
+}
 .el-carousel__item img {
   width: 100%;
   height: 100%;

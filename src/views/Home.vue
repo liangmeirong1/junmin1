@@ -8,10 +8,13 @@
     <TeamShow/>
     <FriLink/>
     <NavBottom/>
+    <BackTop/>
+    <Info/>
   </div>
 </template>
 
 <script>
+import $ from 'jquery'
 import top from '../components/top'
 import central from '../components/central'
 import needs from '../components/needs'
@@ -20,14 +23,25 @@ import FriLink from '../components/FriLink'
 import NavBottom from '../components/NavBottom'
 import ProductArea from '../components/ProductArea'
 import TeamShow from '../components/TeamShow'
+import BackTop from '../components/BackTop'
+import Info from '../components/Info'
 
 export default {
   name: 'home',
-  components:{top,central,needs,productShow,FriLink,NavBottom,ProductArea,TeamShow},
+  components:{top,central,needs,productShow,FriLink,NavBottom,ProductArea,TeamShow,BackTop,Info},
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+    mounted(){
+/*     window.addEventListener("scroll",this.scrollHandle,true) */
+  },
+  methods:{
+/*     scrollHandle(){
+      let top = Math.floor(document.body.scrollTop || document.documentElement.scrollTop || window.pageYOffset)
+      console.log(top)
+    } */
   }
 }
 </script>

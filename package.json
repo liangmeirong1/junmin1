@@ -7,6 +7,8 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "axios": "^0.21.0",
+    "crypto-js": "^4.0.0",
     "element-ui": "^2.14.0",
     "jquery": "^3.5.1",
     "vue": "^2.6.11",

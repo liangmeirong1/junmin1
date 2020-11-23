@@ -1,0 +1,16 @@
+{
+  "id": "2089878",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5209541",
+      "name": "保洁精英团队",
+      "font_class": "jiajiabaojie-tubiao-",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    }
+  ]
+}

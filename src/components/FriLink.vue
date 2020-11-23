@@ -16,8 +16,18 @@ export default {
   data () {
     return {
       msg: '友情链接',
-      Link: [require('../assets/link1.jpg'),require('../assets/link2.jpg'),require('../assets/link3.jpg'),require('../assets/link4.jpg'),require('../assets/link5.jpg'),
-      require('../assets/link6.jpg'),require('../assets/link7.jpg'),require('../assets/link8.jpg')]
+      Link: [require('../assets/img/link1.jpg'),require('../assets/img/link2.jpg'),require('../assets/img/link3.jpg'),require('../assets/img/link4.jpg'),require('../assets/img/link5.jpg'),
+      require('../assets/img/link6.jpg'),require('../assets/img/link7.jpg'),require('../assets/img/link8.jpg')]
+    }
+  },
+    mounted(){
+    window.addEventListener("scroll",this.showIcon)
+  },
+  methods:{
+    showIcon(){
+      if(!!document.documentElement.scrollTop && document.documentElement.scrollTop>1270){
+        $('.Link-box').fadeIn(2500)
+      }
     }
   }
 }
@@ -29,6 +39,7 @@ export default {
   list-style: none;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 #FriLink{
     position: relative;
@@ -43,7 +54,10 @@ export default {
   height: 50px;
   text-align: left;
   line-height: 45px;
-  border-bottom: 1px solid #323b50;
+  border-bottom: 2px solid #323b50;
+}
+.Link-box{
+  display: none;
 }
 .Link-box ul li{
   float: left;

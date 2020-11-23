@@ -23,7 +23,7 @@ export default {
   data () {
     return {
       msg: '登陆页面',
-      topImg: require('../assets/logo.jpg')
+      topImg: require('../assets/img/logo.png')
     }
   }
 }
@@ -38,20 +38,22 @@ export default {
   width: 100%;
 }
 .top{
+  text-align: left;
   height: 150px;
   width: 100%;
 }
 .top img{
-  width: 100%;
-  height: 100%;
+  margin-left: 5%;
+  width: 50%;
+  height: 80%;
 }
 .login-form{
   position: relative;
   height: 500px;
   width: 100%;
-  border: 1px solid green;
 }
 .box{
+  background-color: white;
   position: absolute;
   top: 0;
   right: 50px;

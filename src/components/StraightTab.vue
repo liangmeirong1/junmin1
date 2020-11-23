@@ -5,8 +5,6 @@
         <router-link tag="li" to="/newinfo/demand/pro" active-class="router-link-active">产品需求</router-link>
         <router-link tag="li" to="/newinfo/demand/techno" active-class="router-link-active">技术需求</router-link>
         <router-link tag="li" to="/newinfo/demand/human" active-class="router-link-active">人才需求</router-link>
-        <router-link tag="li" to="#"><span class="iconfont5 icon-tianxie icon"></span>供应信息</router-link>
-        <router-link tag="li" to="/newinfo/demand/device" active-class="router-link-active">设备资源</router-link>
     </ul>
 
 </div>
@@ -31,12 +29,11 @@ export default {
 }
 #StraightTab{
     width: 100%;
-  
     border: 1px solid #dbdbdb;
 }
 #StraightTab ul li{
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #f6f6f6;
   /*   color: gray; */
     border-bottom: 1px solid  #dbdbdb;

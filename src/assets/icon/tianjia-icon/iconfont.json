@@ -1,0 +1,16 @@
+{
+  "id": "2089878",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3040372",
+      "name": "添加",
+      "font_class": "tianjia",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    }
+  ]
+}

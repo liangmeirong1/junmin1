@@ -12,8 +12,19 @@ import './assets/icon/title-icon/iconfont.css'
 import './assets/icon/xiangqing-icon/iconfont.css'
 import './assets/icon/fasong-icon/iconfont.css'
 import './assets/icon/dibu-icon/iconfont.css'
+import './assets/icon/file-icon/iconfont.css'
+import './assets/icon/new-work.icon/iconfont.css'
+import './assets/icon/register-icon/iconfont.css'
+import './assets/icon/team-icon/iconfont.css'
+import './assets/icon/tianjia-icon/iconfont.css'
+import './assets/icon/backtop-icon/iconfont.css'
+import './assets/icon/page-icon/iconfont.css'
+import './assets/icon/control-icon/iconfont.css'
+import './assets/icon/search-icon/iconfont.css'
+import SIdentify from './components/identify'
 
 Vue.use(ELementUI)
+Vue.use(SIdentify)
 
 Vue.config.productionTip = false
 

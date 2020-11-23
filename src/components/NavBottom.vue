@@ -26,8 +26,7 @@ export default {
 #NavBottom{
     height: 200px;
     width: 100%;
-    margin: 0 auto;
-    background-color: rgb(240, 236, 236);
+    background-color: rgb(247, 243, 243);
 }
 .message{
   text-align: left;
